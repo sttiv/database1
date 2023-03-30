@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Informe</title>
+</head>
+<body>
+  <h1>Informe</h1>
+  <table>
+    <tr>
+      <th>Columna 1</th>
+      <th>Columna 2</th>
+      <th>Columna 3</th>
+    </tr>
+    <?php while ($fila = $resultado->fetch_assoc()) { ?>
+    <tr>
+      <td><?php echo $fila['campo1']; ?></td>
+      <td><?php echo $fila['campo2']; ?></td>
+      <td><?php echo $fila['campo3']; ?></td>
+    </tr>
+    <?php } ?>
+  </table>
+</body>
+</html>
